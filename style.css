@@ -1,0 +1,320 @@
+/*
+Theme Name: test-itdecision
+Text Domain: ksas.net
+Version: 1.0
+Description: Test for ITDecision
+Tags: blog, custom post, countdown, footer widgets
+Author: Sergii
+Author URI: https://ksask.net
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+*/
+html, body {
+    font-family: Oswald, OpenSans, Arial, sans-serif;
+    font-size: 14px;
+}
+.content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap {
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    position: absolute;
+    top: 0;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px
+}
+
+main {
+    width: 100%;
+}
+
+.post__content {
+    padding: 100px 10px 220px;
+    background: linear-gradient(0deg, rgba(64, 65, 73, 0.9), rgba(64, 65, 73, 0.9)), url(assets/img/965addb3e1b6ba80c136d7410dbfc8b4.jpg), #404149;
+    background-position: 50% 50%;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.post__content h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.5em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+}
+
+.countdown {
+    margin-top: -150px;
+    /*padding-bottom: 150px;*/
+}
+
+.countdown__content {
+    width: 100%;
+}
+
+.countdown__content .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 15px;
+    padding-top: 35px;
+    background: #F7F7F7;
+}
+
+.countdown__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 220px;
+    padding: 0 15px 30px;
+}
+
+.countdown__item .count{
+    font-weight: 500;
+    font-size: 4.5rem;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: #EE913B;
+}
+
+.countdown__item .title{
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 1.65em;
+    text-transform: uppercase;
+}
+
+.countdown__item .description{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #999999;
+}
+
+.text__center {
+    text-align: center;
+}
+.post__title {
+    margin-top: 40px;
+}
+.post__title .title {
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 1.65em;
+    text-transform: uppercase;
+    color: #404149;
+}
+.work {
+    margin-top: 20px;
+}
+
+.work__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work__item {
+    max-width: 480px;
+    padding: 0 15px 0;
+    margin-bottom: 3rem;
+}
+
+.work__item .work__img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.work__item .d__separator {
+    display: block;
+    width: 55px;
+    height: 6px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    background: #EE913B;
+}
+
+.work__item .title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+
+.work__item .description {
+    font-family: OpenSans;
+    font-size: 16px;
+    line-height: 22px;
+    color: #404149;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 20px;
+    background: #404149;
+
+}
+
+.foot__item {
+    width: 100%;
+    padding: 20px 15px;
+    font-family: OpenSans;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.foot__item .widget,
+.foot__item .widget .textwidget{
+    font-family: OpenSans;
+
+}
+
+.foot__item a {
+    color: #ffffff;
+}
+
+a {
+    transition: color .3s;
+}
+
+a:hover {
+    color: #EE913B;
+}
+.text__right {
+    text-align: right
+}
+
+@media screen and (max-width: 767.98px) {
+    .countdown__item .count{
+        font-size: 2.5rem;
+    }
+
+    .countdown__item .title{
+        font-size: 1.25rem;
+    }
+
+    .work__list {
+        align-items: center ;
+    }
+
+    .foot__item {
+        text-align: center!important
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html, body {
+        font-size: 16px;
+    }
+    .post__content {
+        padding-top: 192px;
+        padding-bottom: 316px;
+    }
+
+    .post__content h1{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 64px;
+    }
+
+    .post__content p{
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .countdown {
+        margin-top: -150px;
+    }
+
+    .countdown__content .list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 57px;
+        background: #F7F7F7;
+    }
+
+    .countdown__item {
+        padding-bottom: 50px;
+    }
+
+    .countdown__item .description{
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .post__title {
+        margin-top: 97px;
+    }
+
+    .work {
+        margin-top: 45px;
+    }
+
+    .work .wrap{
+        max-width: 1140px;
+    }
+
+    .work__list {
+        flex-wrap: nowrap;
+    }
+    .work__item {
+        max-width: 350px;
+    }
+
+    .work__item .work__img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .work__item .d__separator {
+        margin-top: 45px;
+        margin-bottom: 14px;
+    }
+
+    .work__item .description {
+        padding-top: 14px;
+        padding-bottom: 20px;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+
+    .footer__list {
+        display: flex;
+    }
+
+    .foot__item {
+        max-width: 50%;
+        padding: 30px 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .work__item .work__img {
+        height: 380px;
+    }
+}
